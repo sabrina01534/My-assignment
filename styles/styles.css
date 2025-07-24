@@ -7,6 +7,9 @@
   font-style: normal;
 }
 
+.margin {
+  margin: 130px;
+}
 .display {
   display: flex;
 }
@@ -76,4 +79,34 @@ main > section {
   padding: 5px;
   width: 278px;
   gap: 20px;
+}
+
+.third {
+  align-items: center;
+  margin-left: 130px;
+}
+.flower {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.list {
+  margin-top: 30px;
+}
+
+/*latest item*/
+.latest {
+  text-align: center;
+}
+
+.picture {
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 10px;
+  gap: 20px;
+}
+
+.last {
+  padding: 10px;
+  border-radius: 8px;
+  margin: 5px;
 }
