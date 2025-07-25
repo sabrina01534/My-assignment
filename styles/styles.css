@@ -16,6 +16,9 @@
   color: #252432;
   font-weight: bold;
 }
+.new {
+  font-size: 2rem;
+}
 .margin {
   margin: 130px;
 }
@@ -55,12 +58,13 @@
 
 .banner,
 .navbar,
-.header {
+.header,
+.image {
   margin: 0 auto;
   max-width: 1440px;
 }
 .banner {
-  padding: 170px;
+  justify-content: space-between;
 }
 .paragraph {
   padding-right: 50px;
@@ -98,19 +102,29 @@ main > section {
   width: 278px;
   gap: 20px;
 }
-
+.image {
+  justify-content: space-between;
+}
 .third {
   align-items: center;
-  margin-left: 130px;
+  padding-right: 30px;
 }
 .flower {
   font-size: 2rem;
   font-weight: 700;
+  padding-top: 170px;
 }
 .list {
   margin-top: 30px;
 }
 
+.badge {
+  max-height: 1px;
+  max-width: 1px;
+
+  position: relative;
+  position: absolute;
+}
 /*latest item*/
 .section {
   background-image: url(../assets/news-letter-bg.png);
@@ -120,18 +134,58 @@ main > section {
   width: 100%;
 }
 
-.picture {
+/*.picture {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0 auto;
   text-align: center;
   border-radius: 10px;
 }
+*/
+.picture {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-image: url(../assets/news-letter-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 533px;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+.join {
+  padding-top: 200px;
+  font-size: 2rem;
+  font-weight: bold;
+}
 
+.blank {
+  width: 70%;
+  background-color: #ffffff;
+}
+h1 {
+  text-align: center;
+}
+input {
+  max-width: 640px;
+  padding: 26px 0px 20px 20px;
+  width: 80%;
+  font-size: 1rem;
+}
+.class {
+  background-color: #ffffff;
+}
 .last {
-  padding: 10px;
-  border-radius: 8px;
-  margin: 5px;
+  max-width: 186px;
+  padding: 26px 50px;
+  border: none;
+  width: 20%;
 }
 
 .fact {
@@ -147,7 +201,8 @@ main > section {
   grid-template-columns: repeat(4, 1fr);
 }
 .icon {
-  gap: 10px;
+  display: flex;
+  gap: 40px;
 }
 
 @media screen and (max-width: 576px) {
@@ -159,11 +214,17 @@ main > section {
   .hidden {
     display: none;
   }
+  .image {
+    flex-direction: column;
+  }
   .design {
+    width: 100%;
+    height: auto;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
   .footer {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }

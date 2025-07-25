@@ -8,8 +8,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
       integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+      referrerpolicy="no-referrer"/>
+ <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles/styles.css" />
     <title>My Second Assignment</title>
   </head>
@@ -17,7 +17,7 @@
     <!--navbar-->
     <header class="header">
       <nav class="navbar display">
-        <img src="assets/logo.png" />
+        <img src="./assets/logo.png" />
         <ul class="display">
           <li class="nav-item"><a href="" class=" text nav-link">Home</a></li>
           <li class="hidden nav-item">
@@ -51,7 +51,7 @@
         </div>
 
         <div>
-          <img src="assets/hero-flower.png" />
+          <img src="./assets/hero-flower.png" />
         </div>
       </div>
     </header>
@@ -59,7 +59,7 @@
     <!--main-->
     <main class="main">
       <div class="text">
-        <h1><span class="text-primary">Our</span> Plants</h1>
+        <h1 class="new"><span class="  text-primary">Our</span> Plants</h1>
         <p class="text-gray">
           Indulge your senses with the beauty and fragrance of our fresh flower
           shop. From<br />
@@ -67,28 +67,28 @@
         </p>
       </div>
       <!--card-->
-      <section  class="design margin">
+      <section  class="design">
         
           <div class=" card img">
-            <img src="assets/sample-flower-image.png" />
+            <img src="./assets/sample-flower-image.png" />
             <h5 class="letter text-gray">Lily Blossom</h5>
             <h5 class="letter">20 USD</h5>
             <button class="bnt-primary">ADD TO CART</button>
           </div>
           <div class="card">
-            <img src="assets/sample-flower-image.png" />
+            <img src="./assets/sample-flower-image.png" />
             <h5 class="letter text-gray">Lily Blossom</h5>
             <h5 class="letter">20 USD</h5>
             <button class="bnt-primary">ADD TO CART</button>
           </div>
           <div class="card">
-            <img src="assets/sample-flower-image.png" />
+            <img src="./assets/sample-flower-image.png" />
             <h5 class="letter text-gray">Lily Blossom</h5>
             <h5 class="letter">20 USD</h5>
             <button class="bnt-primary">ADD TO CART</button>
           </div>
           <div class="card">
-            <img src="assets/sample-flower-image.png" />
+            <img src="./assets/sample-flower-image.png" />
             <h5 class="letter text-gray">Lily Blossom</h5>
             <h5 class="letter">20 USD</h5>
             <button class="bnt-primary">ADD TO CART</button>
@@ -97,25 +97,25 @@
 
      
           <div class="card">
-            <img src="assets/sample-flower-image.png" />
+            <img src="./assets/sample-flower-image.png" />
             <h5 class="letter text-gray">Lily Blossom</h5>
             <h5 class="letter">20 USD</h5>
             <button class="bnt-primary">ADD TO CART</button>
           </div>
           <div class="card">
-            <img src="assets/sample-flower-image.png" />
+            <img src="./assets/sample-flower-image.png" />
             <h5 class="letter text-gray">Lily Blossom</h5>
             <h5 class="letter">20 USD</h5>
             <button class="bnt-primary">ADD TO CART</button>
           </div>
           <div class="card">
-            <img src="assets/sample-flower-image.png" />
+            <img src="./assets/sample-flower-image.png" />
             <h5 class="letter text-gray">Lily Blossom</h5>
             <h5 class="letter">20 USD</h5>
             <button class="bnt-primary">ADD TO CART</button>
           </div>
           <div class="card">
-            <img src="assets/sample-flower-image.png" />
+            <img src="./assets/sample-flower-image.png" />
             <h5 class="letter text-gray">Lily Blossom</h5>
             <h5 class="letter">20 USD</h5>
             <button class="bnt-primary">ADD TO CART</button>
@@ -123,12 +123,15 @@
        </section>
       
 
-      <section class=" margin display">
-        <div>
-          <img src="assets/flower-store.png" />
+      <section class="image  margin display">
+     <!--<div class="badge">
+      <img src="./assets/trusted-badge.png">
+     </div>-->
+        <div class="margin" >
+          <img src="./assets/flower-store.png" />
         </div>
         <div class=" third">
-          <h1 class="flower">Flower & Plants <br />Lover</h1>
+          <h1 class="flower ">Flower & Plants <br />Lover</h1>
           <p> 
             <lu>
               <li class="list">
@@ -154,7 +157,7 @@
       <!--latest section-->
       <section>
         <div class="latest">
-          <h1><span class="text-primary">Latest</span> Deals</h1>
+          <h1 class="new text"><span class="text-primary">Latest</span> Deals</h1>
           <p>
             Indulge your senses with the beauty and fragrance of our fresh
             flower shop. From <br />classic roses to exotic blooms, we offer a
@@ -162,38 +165,24 @@
           </p>
         </div>
       </section>
-      <section class="picture">
-        <div class="margin">
-          <img src="assets/deal-bloom.png" /><br />
-          <img src="assets/deal-ana.png" />
-        </div>
-        <div class="margin">
-          <img src="assets/deal-zabo.png" />
-        </div>
-      </section>
 
-      <section class="section">
-     
-        <div class="fact">
-          <h1 class="text-gray">Join the colorful Bunch</h1>
-          <form>
-            <input type="text"
-              for="email"
-              name="email"
-              id="email"
-               placeholder="Write Email"
-            >
-            <button class="last bnt-primary">Subscribe</button>
-          </form>
+      <section class="picture">
+        <h1 class=" join bg-text ">Join the colorful Bunch</h1>
+        <div class="container ">
+          <div class="blank">
+<input   type="email" placeholder="Write Email">
         </div>
-      </section>
+       <button class="  last bnt-primary">Subscribe</button>   
+        </div>
+     </section>
+     
     </main>
   
     <!--footer-->
     <footer >
       <section class="footer  margin">
         <div>
-          <img src="assets/logo.png" />
+          <img src="./assets/logo.png" />
           <p class="text-gray">
             Indulge your senses with the <br />beauty and fragrance of our
             fresh<br />
@@ -239,11 +228,19 @@
         </ul>
         </div>
 
-        <div class="icon">
-            <img src="assets/icon-linkedin.png">
-            <img src="assets/icon-twitter.png">
-            <img src="assets/icon-facebook.png">
-            <img src="assets/icon-youtube.png">
+        <div class="icon ">
+          <div>
+            <img src="./assets/icon-linkedin.png">
+        </div>
+            <div>
+            <img src="./assets/icon-twitter.png">
+            </div>
+            <div>
+            <img src="./assets/icon-facebook.png">
+            </div>
+            <div>
+            <img src="./assets/icon-youtube.png">
+            </div>
         </div>
       </section>
     </footer>
