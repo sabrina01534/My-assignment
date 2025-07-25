@@ -35,7 +35,9 @@
 }
 
 /*Navbar*/
-
+.hidden {
+  display: flex;
+}
 .navbar {
   justify-content: space-between;
   align-items: center;
